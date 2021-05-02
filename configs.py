@@ -30,7 +30,7 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 
 📡 **Hosted on:** [Heroku](https://heroku.com)
 
-🧑🏻‍💻 **Developer:** @AbirHasan2005
+🧑🏻‍💻 **Developer:** @DL_tg
 
 👥 **Support Group:** [GROUP](https://t.me/joinchat/F_6ts1iYxSE4YzNl)
 
