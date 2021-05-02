@@ -95,7 +95,11 @@ async def start(bot, cmd):
                 send_stored_file = await bot.forward_messages(chat_id=cmd.from_user.id, from_chat_id=Config.DB_CHANNEL,
                                                               message_ids=file_id)
             await send_stored_file.reply_text(
-                f"**Here is Sharable Link of this file:** https://t.me/{Config.BOT_USERNAME}?start=MCubeMedia_{file_id}\n\n__To Retrive the Stored File, just open the link!__",
+                f"**Get More Films in [Group](https://t.me/joinchat/F_6ts1iYxSE4YzNl)",
+                parse_mode="Markdown",
+                reply_markup=InlineKeyboardMarkup(
+                    [InlineKeyboardButton("Group", url="https://t.me/joinchat/F_6ts1iYxSE4YzNl")]
+                ),
                 disable_web_page_preview=True, quote=True)
         except Exception as err:
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
