@@ -102,11 +102,10 @@ async def start(bot, cmd):
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton("Get More" , url="https://t.me/joinchat/F_6ts1iYxSE4YzNl")]]
                 ),
-                disable_web_page_preview=True, quote=True
+                disable_web_page_preview=True
             )
         except Exception as err:
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
-                
 @Bot.on_message((filters.document | filters.video | filters.audio) & ~filters.edited)
 async def main(bot, message):
     if message.chat.type == "private":
