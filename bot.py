@@ -95,20 +95,12 @@ async def start(bot, cmd):
                 send_stored_file = await bot.forward_messages(chat_id=cmd.from_user.id, from_chat_id=Config.DB_CHANNEL,
                                                               message_ids=file_id)
             await send_stored_file.reply_text(
-                f"**Get More Films in [Group](https://t.me/joinchat/F_6ts1iYxSE4YzNl)",
-           await cmd.reply_text(
-            Config.send_stored_file.format(cmd.from_user.first_name, cmd.from_user.id),
-            parse_mode="Markdown",
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("GEt MorE", url="https://t.me/joinchat/F_6ts1iYxSE4YzNl"),
-                    ]
-                ]
-            )
+                f"**Get More Files** [Group](https://t.me/joinchat/F_6ts1iYxSE4YzNl) [Group](Buttonurl:https://t.me/joinchat/F_6ts1iYxSE4YzNl)",
+                disable_web_page_preview=True, quote=True)
         except Exception as err:
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
+            
+            
 @Bot.on_message((filters.document | filters.video | filters.audio) & ~filters.edited)
 async def main(bot, message):
     if message.chat.type == "private":
