@@ -96,7 +96,12 @@ async def start(bot, cmd):
                                                               message_ids=file_id)
             await send_stored_file.reply_text(
                 f"**Get More Films in [Group](https://t.me/joinchat/F_6ts1iYxSE4YzNl)",
-                
+            await editable.edit(
+                f"**Get More Films",
+                parse_mode="Markdown" ,
+                reply_markup=InlineKeyboardMarkup(
+                    [[InlineKeyboardButton("Get More" , url="https://t.me/joinchat/F_6ts1iYxSE4YzNl")]]
+                ),
                 disable_web_page_preview=True, quote=True)
         except Exception as err:
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
