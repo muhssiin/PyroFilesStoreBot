@@ -96,13 +96,16 @@ async def start(bot, cmd):
                                                               message_ids=file_id)
             await send_stored_file.reply_text(
                 f"**Get More Films in [Group](https://t.me/joinchat/F_6ts1iYxSE4YzNl)",
-            await bot.send_stored_file(
-                f"**Get More Films",
-                parse_mode="Markdown" ,
-                reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton("Get More" , url="https://t.me/joinchat/F_6ts1iYxSE4YzNl")]]
-                ),
-                disable_web_page_preview=True
+           await cmd.reply_text(
+            Config.send_stored_file.format(cmd.from_user.first_name, cmd.from_user.id),
+            parse_mode="Markdown",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("GEt MorE", url="https://t.me/joinchat/F_6ts1iYxSE4YzNl"),
+                    ]
+                ]
             )
         except Exception as err:
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
