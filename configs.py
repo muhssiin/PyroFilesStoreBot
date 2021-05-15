@@ -19,10 +19,10 @@ class Config(object):
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779").split()))
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
 	ABOUT_BOT_TEXT = f"""
-This is Permanent Files Store Bot!
+This is Files Sharing Bot!
 *I am official file sharing bot of [M'Cube Movies](https://t.me/joinchat/F_6ts1iYxSE4YzNl)
 
-🤖 **My Name:** [Files Store Bot](https://t.me/{BOT_USERNAME})
+🤖 **My Name:** [Files Share Bot](https://t.me/{BOT_USERNAME})
 
 🧑🏻‍💻 **Developer:** @DL_tg
 
@@ -39,6 +39,6 @@ Official channel
 
 """
 	HOME_TEXT = """
-Hi, [{}](tg://user?id={})\n\nThis is Permanent **File Store Bot**.
+Hi, [{}](tg://user?id={})\n\n**ഞാൻ ഒരു ഫയൽ share bot ആണ് ഞങ്ങളുടെ ഗ്രൂപ്പ് സന്ത്രശിക്കുക** **File Share Bot**.
 
 """
