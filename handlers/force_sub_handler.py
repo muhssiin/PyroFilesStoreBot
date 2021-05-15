@@ -20,7 +20,7 @@ async def handle_force_sub(bot, cmd):
     except UserNotParticipant:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
+            text="**Please Join Our Main Channel to use this Bot!** \n**നിങ്ങൾ ഇപ്പോഴും ചേർന്നിട്ടില്ല ☹️, ഈ ബോട്ട് ഉപയോഗിക്കുന്നതിന് ദയവായി ഞങ്ങളുടെ പ്രധാന ചാനലിൽ ചേരുക** \n\nOnly Channel Subscribers can use the Bot \n\n\n നീ ഇപ്പോ ഫയൽ തപ്പി അല്ലേ വന്നത് അതിന് നിനക്ക് ഫയൽ കിട്ടണമെങ്കിൽ ഞങ്ങളുടെ പ്രധാന ചാനലിൽ ജോയിൻ ചെയ്തേപറ്റൂ അതിന് ശേഷം ഒന്നു കൂടി ശ്രമിച്ചു നോക്കൂ",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
