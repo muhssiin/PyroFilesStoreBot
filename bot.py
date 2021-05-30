@@ -118,7 +118,7 @@ async def main(bot, message):
             else:
                 pass
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Admin](https://t.me/DL_tg)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Admin](https://t.me/rashmikamandannaofficial1)",
                                      disable_web_page_preview=True)
             return
         if Config.OTHER_USERS_CAN_SAVE_FILE is False:
@@ -296,7 +296,7 @@ async def button(bot, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source ",
-                                             url="https://t.me/joinchat/F_6ts1iYxSE4YzNl")
+                                             url="https://t.me/smplmcube/7")
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
@@ -314,7 +314,7 @@ async def button(bot, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source ",
-                                             url="https://t.me/joinchat/F_6ts1iYxSE4YzNl")
+                                             url="https://t.me/smplmcube/7")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -371,7 +371,7 @@ async def button(bot, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Admin](https://t.me/DL_tg).",
+                    text="Something went Wrong. Contact my [Admin](https://t.me/rashmikamandannaofficial1).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
