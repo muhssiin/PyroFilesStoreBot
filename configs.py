@@ -20,25 +20,25 @@ class Config(object):
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
 	ABOUT_BOT_TEXT = f"""
 This is Files Sharing Bot!
-*I am official file sharing bot of [M'Cube Movies](https://t.me/joinchat/F_6ts1iYxSE4YzNl)
+*I am official file Cloud bot of [M'Cube Movies](https://t.me/joinchat/F_6ts1iYxSE4YzNl)
 
-🤖 **My Name:** [Files Share Bot](https://t.me/{BOT_USERNAME})
+🤖 **My Name:** [Files Cloud Bot](https://t.me/{BOT_USERNAME})
 
-🧑🏻‍💻 **Developer:** @DL_tg
+🧑🏻‍💻 **Developer:** [Rashmika](https://t.me/rashmikamandannaofficial1)
 
 👥 **Support Group:** [GROUP](https://t.me/joinchat/F_6ts1iYxSE4YzNl)
 
 📢 **Updates Channel:** [CHANNEL](https://t.me/MCubeMediaOfficial)
 """
 	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 **Developer:** @DL_tg
-M'Cube Media®
+🧑🏻‍💻 **Developer:** [Rashmika](https://t.me/rashmikamandannaofficial1)
+M'Cube Media
 –––––––––––
 Official channel
 🖇 @MCubeMediaofficial
 
 """
 	HOME_TEXT = """
-Hi, [{}](tg://user?id={})\n\n**ഞാൻ ഒരു ഫയൽ share bot ആണ് ഞങ്ങളുടെ ഗ്രൂപ്പ് സന്ത്രശിക്കുക** **File Share Bot**.
+Hi, [{}](tg://user?id={})\n\n**ഞാൻ ഒരു ഫയൽ Cloud bot ആണ് ഞങ്ങളുടെ ഗ്രൂപ്പ് സന്ത്രശിക്കുക** **File Cloud Bot**.
 
 """
